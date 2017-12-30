@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "reader_view",
+  "description": "cleans up page content for reading",
+  "version": "0.1.0",
+  "background": {
+    "persistent": false,
+    "scripts": ["handlers.js", "background.js"]
+  },
+  "page_action": {
+    "default_icon": "images/icon_128.png" 
+  },
+  "permissions": [
+   "activeTab"
+  ]
+}
