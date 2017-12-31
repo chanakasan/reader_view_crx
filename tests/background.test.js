@@ -8,4 +8,8 @@ describe('background.js', () => {
   it('listens for pageAction.onClicked', () => {
     expect(chrome.pageAction.onClicked.addListener).toBeCalledWith(handlePageActionClick)
   })
+
+  it('listens for tabs.onUpdated', () => {
+    expect(chrome.tabs.onUpdated.addListener).toBeCalledWith(handleTabUpdate)
+  })
 })

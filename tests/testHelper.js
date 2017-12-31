@@ -7,10 +7,14 @@ _.extend(global, require('../src/handlers'))
 global.chrome = {
   tabs: {
     query: jest.fn(),
+    onUpdated: {
+      addListener: jest.fn(),
+    },
   },
   pageAction: {
     onClicked: {
       addListener: jest.fn(),
-    }
+    },
+    show: jest.fn(),
   },
 }
